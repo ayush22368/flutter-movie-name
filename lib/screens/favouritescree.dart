@@ -70,11 +70,9 @@ class _favouriteState extends State<favourite> {
                                   Expanded(
                                     child: Column(
                                       mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.only(right: 14),
-                                          child: Text(favdata[index].name,maxLines: 2,overflow: TextOverflow.ellipsis, style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w200,),),
-                                        ),
+                                        Text(favdata[index].name,maxLines: 2,overflow: TextOverflow.ellipsis, style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w200,),),
                                         favdata[index].rating!=null?Padding(padding: EdgeInsets.only(right: 50), child : Text("⭐${favdata[index].rating}",style: TextStyle(fontSize: 18,color: Colors.white),)):Text("No rating",style: TextStyle(fontSize: 17,color: Colors.white),)
                                       ],
                                     ),
